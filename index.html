@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #e95a08;
+        --color-secondary: #8987a1;
+        --color-background: #f5f8ff;
+        --font-noto: Noto Serif, serif;
+        --font-inter: Inter, sans-serif;
+      }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <title>Faugei Shop</title>
+  </head>
+  <body class="bg-background lg:mx-[80px] mx-5">
+    <header>
+      <div class="flex justify-between items-center pt-4">
+        <img src="/assets/logo.svg" alt="Logo" class="w-20 lg:w-fit" />
+        <nav class="font-inter flex gap-12">
+          <ul class="lg:flex hidden gap-12">
+            <li><a class="font-bold" href="#">Home</a></li>
+            <li><a class="text-secondary" href="#">Shop</a></li>
+            <li><a class="text-secondary" href="#">About us</a></li>
+          </ul>
+          <div class="flex items-center gap-2">
+            <img src="/assets/shopping-cart.svg" alt="Cart" />
+            <p>Cart ($56)</p>
+          </div>
+        </nav>
+      </div>
+
+      <div class="flex lg:flex-row flex-col-reverse items-end lg:mt-[100px] mt-10 justify-between">
+        <div class="lg:w-[35%]">
+          <h2 class="font-noto mb-2 lg:text-5xl text-2xl lg:mt-0 mt-5 font-bold leading-snug">
+            ALWAYS <span class="text-primary">FRESH FLOWERS</span>
+          </h2>
+          <p class="font-inter lg:text-base text-xs text-secondary">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <img src="/assets/hero-flower.svg" alt="Flowers" class="relative left-5"/>
+      </div>
+    </header>
+  </body>
+</html>
